@@ -1,4 +1,4 @@
-# Inventory Event Sourcing
+# Ecommerce Event Sourcing
 
 This repository demonstrates an event sourcing implementation using Marten with Postgres for managing Inventory, Warehouse, Order, and Cart functionalities. Event sourcing captures all changes to application state as a sequence of events, providing detailed auditing, reconstruction of past states, and a clear history of data changes.
 
