@@ -7,7 +7,6 @@ This repository demonstrates an event sourcing implementation using Marten with 
 ## Features
 
 - **Event Sourcing:** Utilizes Marten with Postgres to implement event sourcing for Inventory, Warehouse, Order, and Cart management.
-- **API Documentation:** Swagger UI integrated for exploring and testing API endpoints.
 - **Services Implemented:**
   - CartService: Manages shopping cart operations such as adding/removing items, updating quantities, and shipping information.
   - OrderService: Handles order creation, cancellation, submission, and retrieval.
