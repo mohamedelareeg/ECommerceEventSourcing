@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  inventory.api:
+    image: ${DOCKER_REGISTRY-}inventoryapi
+    build:
+      context: .
+      dockerfile: src/Inventory.EventSourcing.Api/Dockerfile
+    depends_on:
+      - postgres
+    networks:
+      - backend
+
+  postgres:
+    image: postgres:latest
+    container_name: postgres
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: InventoryDB
+    ports:
+      - "5437:5432"
+    networks:
+      - backend
+
+networks:
+  backend:
